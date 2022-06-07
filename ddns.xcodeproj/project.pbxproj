@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD1381CB284F1CA500A24CF1 /* ddnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */; };
+		CD1381CD284F1CA500A24CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CC284F1CA500A24CF1 /* ContentView.swift */; };
+		CD1381CF284F1CA600A24CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1381CE284F1CA600A24CF1 /* Assets.xcassets */; };
+		CD1381D2284F1CA600A24CF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1381D1284F1CA600A24CF1 /* Preview Assets.xcassets */; };
+		CD1381D4284F1CA600A24CF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381D3284F1CA600A24CF1 /* Persistence.swift */; };
+		CD1381D7284F1CA600A24CF1 /* ddns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD1381D5284F1CA600A24CF1 /* ddns.xcdatamodeld */; };
+		CD1381E2284F1CA600A24CF1 /* ddnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381E1284F1CA600A24CF1 /* ddnsTests.swift */; };
+		CD1381EC284F1CA600A24CF1 /* ddnsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */; };
+		CD1381EE284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD1381DE284F1CA600A24CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1381BF284F1CA500A24CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1381C6284F1CA500A24CF1;
+			remoteInfo = ddns;
+		};
+		CD1381E8284F1CA600A24CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1381BF284F1CA500A24CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1381C6284F1CA500A24CF1;
+			remoteInfo = ddns;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD1381C7284F1CA500A24CF1 /* ddns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsApp.swift; sourceTree = "<group>"; };
+		CD1381CC284F1CA500A24CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD1381CE284F1CA600A24CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD1381D1284F1CA600A24CF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD1381D3284F1CA600A24CF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CD1381D6284F1CA600A24CF1 /* ddns.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ddns.xcdatamodel; sourceTree = "<group>"; };
+		CD1381D8284F1CA600A24CF1 /* ddns.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ddns.entitlements; sourceTree = "<group>"; };
+		CD1381DD284F1CA600A24CF1 /* ddnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ddnsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1381E1284F1CA600A24CF1 /* ddnsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsTests.swift; sourceTree = "<group>"; };
+		CD1381E7284F1CA600A24CF1 /* ddnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ddnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsUITests.swift; sourceTree = "<group>"; };
+		CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1381C4284F1CA500A24CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1381DA284F1CA600A24CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1381E4284F1CA600A24CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD1381BE284F1CA500A24CF1 = {
+			isa = PBXGroup;
+			children = (
+				CD1381C9284F1CA500A24CF1 /* ddns */,
+				CD1381E0284F1CA600A24CF1 /* ddnsTests */,
+				CD1381EA284F1CA600A24CF1 /* ddnsUITests */,
+				CD1381C8284F1CA500A24CF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD1381C8284F1CA500A24CF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381C7284F1CA500A24CF1 /* ddns.app */,
+				CD1381DD284F1CA600A24CF1 /* ddnsTests.xctest */,
+				CD1381E7284F1CA600A24CF1 /* ddnsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1381C9284F1CA500A24CF1 /* ddns */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */,
+				CD1381CC284F1CA500A24CF1 /* ContentView.swift */,
+				CD1381CE284F1CA600A24CF1 /* Assets.xcassets */,
+				CD1381D3284F1CA600A24CF1 /* Persistence.swift */,
+				CD1381D8284F1CA600A24CF1 /* ddns.entitlements */,
+				CD1381D5284F1CA600A24CF1 /* ddns.xcdatamodeld */,
+				CD1381D0284F1CA600A24CF1 /* Preview Content */,
+			);
+			path = ddns;
+			sourceTree = "<group>";
+		};
+		CD1381D0284F1CA600A24CF1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381D1284F1CA600A24CF1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD1381E0284F1CA600A24CF1 /* ddnsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381E1284F1CA600A24CF1 /* ddnsTests.swift */,
+			);
+			path = ddnsTests;
+			sourceTree = "<group>";
+		};
+		CD1381EA284F1CA600A24CF1 /* ddnsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */,
+				CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */,
+			);
+			path = ddnsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD1381C6284F1CA500A24CF1 /* ddns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1381F1284F1CA600A24CF1 /* Build configuration list for PBXNativeTarget "ddns" */;
+			buildPhases = (
+				CD1381C3284F1CA500A24CF1 /* Sources */,
+				CD1381C4284F1CA500A24CF1 /* Frameworks */,
+				CD1381C5284F1CA500A24CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ddns;
+			productName = ddns;
+			productReference = CD1381C7284F1CA500A24CF1 /* ddns.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD1381DC284F1CA600A24CF1 /* ddnsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1381F4284F1CA600A24CF1 /* Build configuration list for PBXNativeTarget "ddnsTests" */;
+			buildPhases = (
+				CD1381D9284F1CA600A24CF1 /* Sources */,
+				CD1381DA284F1CA600A24CF1 /* Frameworks */,
+				CD1381DB284F1CA600A24CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1381DF284F1CA600A24CF1 /* PBXTargetDependency */,
+			);
+			name = ddnsTests;
+			productName = ddnsTests;
+			productReference = CD1381DD284F1CA600A24CF1 /* ddnsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD1381E6284F1CA600A24CF1 /* ddnsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1381F7284F1CA600A24CF1 /* Build configuration list for PBXNativeTarget "ddnsUITests" */;
+			buildPhases = (
+				CD1381E3284F1CA600A24CF1 /* Sources */,
+				CD1381E4284F1CA600A24CF1 /* Frameworks */,
+				CD1381E5284F1CA600A24CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1381E9284F1CA600A24CF1 /* PBXTargetDependency */,
+			);
+			name = ddnsUITests;
+			productName = ddnsUITests;
+			productReference = CD1381E7284F1CA600A24CF1 /* ddnsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD1381BF284F1CA500A24CF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CD1381C6284F1CA500A24CF1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CD1381DC284F1CA600A24CF1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CD1381C6284F1CA500A24CF1;
+					};
+					CD1381E6284F1CA600A24CF1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CD1381C6284F1CA500A24CF1;
+					};
+				};
+			};
+			buildConfigurationList = CD1381C2284F1CA500A24CF1 /* Build configuration list for PBXProject "ddns" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD1381BE284F1CA500A24CF1;
+			productRefGroup = CD1381C8284F1CA500A24CF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD1381C6284F1CA500A24CF1 /* ddns */,
+				CD1381DC284F1CA600A24CF1 /* ddnsTests */,
+				CD1381E6284F1CA600A24CF1 /* ddnsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD1381C5284F1CA500A24CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1381D2284F1CA600A24CF1 /* Preview Assets.xcassets in Resources */,
+				CD1381CF284F1CA600A24CF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1381DB284F1CA600A24CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1381E5284F1CA600A24CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD1381C3284F1CA500A24CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1381D4284F1CA600A24CF1 /* Persistence.swift in Sources */,
+				CD1381CD284F1CA500A24CF1 /* ContentView.swift in Sources */,
+				CD1381D7284F1CA600A24CF1 /* ddns.xcdatamodeld in Sources */,
+				CD1381CB284F1CA500A24CF1 /* ddnsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1381D9284F1CA600A24CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1381E2284F1CA600A24CF1 /* ddnsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1381E3284F1CA600A24CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1381EC284F1CA600A24CF1 /* ddnsUITests.swift in Sources */,
+				CD1381EE284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD1381DF284F1CA600A24CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1381C6284F1CA500A24CF1 /* ddns */;
+			targetProxy = CD1381DE284F1CA600A24CF1 /* PBXContainerItemProxy */;
+		};
+		CD1381E9284F1CA600A24CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1381C6284F1CA500A24CF1 /* ddns */;
+			targetProxy = CD1381E8284F1CA600A24CF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD1381EF284F1CA600A24CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD1381F0284F1CA600A24CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CD1381F2284F1CA600A24CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ddns/ddns.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ddns/Preview Content\"";
+				DEVELOPMENT_TEAM = P9KK452K8P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD1381F3284F1CA600A24CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ddns/ddns.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ddns/Preview Content\"";
+				DEVELOPMENT_TEAM = P9KK452K8P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CD1381F5284F1CA600A24CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9KK452K8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddnsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ddns.app/Contents/MacOS/ddns";
+			};
+			name = Debug;
+		};
+		CD1381F6284F1CA600A24CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9KK452K8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddnsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ddns.app/Contents/MacOS/ddns";
+			};
+			name = Release;
+		};
+		CD1381F8284F1CA600A24CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9KK452K8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddnsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ddns;
+			};
+			name = Debug;
+		};
+		CD1381F9284F1CA600A24CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9KK452K8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddnsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ddns;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1381C2284F1CA500A24CF1 /* Build configuration list for PBXProject "ddns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1381EF284F1CA600A24CF1 /* Debug */,
+				CD1381F0284F1CA600A24CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1381F1284F1CA600A24CF1 /* Build configuration list for PBXNativeTarget "ddns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1381F2284F1CA600A24CF1 /* Debug */,
+				CD1381F3284F1CA600A24CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1381F4284F1CA600A24CF1 /* Build configuration list for PBXNativeTarget "ddnsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1381F5284F1CA600A24CF1 /* Debug */,
+				CD1381F6284F1CA600A24CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1381F7284F1CA600A24CF1 /* Build configuration list for PBXNativeTarget "ddnsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1381F8284F1CA600A24CF1 /* Debug */,
+				CD1381F9284F1CA600A24CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD1381D5284F1CA600A24CF1 /* ddns.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD1381D6284F1CA600A24CF1 /* ddns.xcdatamodel */,
+			);
+			currentVersion = CD1381D6284F1CA600A24CF1 /* ddns.xcdatamodel */;
+			path = ddns.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD1381BF284F1CA500A24CF1 /* Project object */;
+}
