@@ -52,7 +52,7 @@ struct HostListItem: View {
             }
         }
         .contextMenu{
-            Button(action: { viewContext.delete(host) }){
+            Button(action: { delete(host: host) }){
                 Text("Delete")
             }
             Button(action: { Task{ await refresh()} }){
@@ -68,11 +68,21 @@ struct HostListItem: View {
         await updateDomainName()
     }
     
+    
+    func delete(host: Host) {
+        do {
+            viewContext.delete(host)
+            try viewContext.save()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     func updateDomainName() async {
-        isLoading = true
-        if host.domainName == nil {
+        if host.domainName != nil {
             return
         }
+        isLoading = true
         do {
             let zoneInfo = try await cloudflareClient.use(host: host).getZone()
             if let result = zoneInfo.result {
