@@ -27,6 +27,23 @@ struct CloudflareResult<T: CloudflareCodableResult>: Codable {
     }
 }
 
+
+struct CloudflareArrayResult<T: CloudflareCodableResult>: Codable {
+    var success: Bool
+    var errors: [CloudflareError]
+    var result: [T]
+    
+    func with(error: CloudflareErrorCode) -> Bool {
+        for err in errors {
+            if err.code == error {
+                return true
+            }
+        }
+        return false
+    }
+}
+
+
 // MARK: - CloudflareDNSCreationParameter
 struct CloudflareDNSCreationParameter: Codable {
     var type: String
@@ -45,6 +62,7 @@ struct CloudflareError: Codable {
 // MARK: - CloudflareDNSResult
 struct CloudflareDNSResult: CloudflareCodableResult {
     var id, type, name, content: String
+    var proxied: Bool
 }
 
 // MARK: - Meta

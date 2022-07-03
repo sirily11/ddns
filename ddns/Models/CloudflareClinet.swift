@@ -27,11 +27,17 @@ class CloudflareClient: ObservableObject {
     }
     
    
-    func listDNSRecords() async throws -> CloudflareResult<CloudflareDNSResult> {
+    func listDNSRecords() async throws -> CloudflareArrayResult<CloudflareDNSResult> {
         if let baseURL = baseURL {
             if let host = host {
-                let url = baseURL.appendingPathComponent(host.zoneId!).appendingPathComponent("dns_records")
-                let task = AF.request(url, headers: headers!).serializingDecodable(CloudflareResult<CloudflareDNSResult>.self)
+                let url = baseURL
+                    .appendingPathComponent("zones")
+                    .appendingPathComponent(host.zoneId!)
+                    .appendingPathComponent("dns_records")
+                let task = AF.request(url,
+                                      method: .get,
+                                      headers: headers!)
+                            .serializingDecodable(CloudflareArrayResult<CloudflareDNSResult>.self)
                 let value = try await task.value
                 return value
             }

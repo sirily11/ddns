@@ -10,6 +10,6 @@ import Foundation
 extension DNSRecord {
     
     func cloudflareDNSCreationParameter() -> CloudflareDNSCreationParameter{
-        return CloudflareDNSCreationParameter(type: type!, name: name!, content: ipAddress!, proxied: false)
+        return CloudflareDNSCreationParameter(type: type!, name: name!, content: ipAddress!, proxied: proxied)
     }
 }

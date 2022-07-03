@@ -12,6 +12,7 @@ struct HostListItem: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var cloudflareClient: CloudflareClient
+    @EnvironmentObject var dnsUpdateModel: DnsUpdateModel
     
     @State var error: Error?
     @State var showError = false
@@ -65,7 +66,12 @@ struct HostListItem: View {
     }
     
     func refresh() async {
-        await updateDomainName()
+        do {
+            await updateDomainName()
+            try await dnsUpdateModel.updateDnsRecords(context: viewContext, cloudflare: cloudflareClient, host: host)
+        } catch let error {
+            self.error = error
+        }
     }
     
     
@@ -75,8 +81,10 @@ struct HostListItem: View {
             try viewContext.save()
         } catch let error {
             print(error.localizedDescription)
+            self.error = error
         }
     }
+    
     
     func updateDomainName() async {
         if host.domainName != nil {

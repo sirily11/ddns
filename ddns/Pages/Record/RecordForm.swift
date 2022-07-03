@@ -23,6 +23,8 @@ struct RecordForm: View {
     @State var name: String = ""
     @State var type: String = ""
     @State var watch: Bool = false
+    @State var proxied: Bool = false
+    
     @State var error: Error?
     @State var showError = false
     @State var isLoading = false
@@ -53,6 +55,8 @@ struct RecordForm: View {
                     Text(type.rawValue).tag(type.rawValue)
                 }
             }
+            
+            Toggle("Proxied", isOn: $proxied).toggleStyle(.checkbox)
             Toggle("Watch", isOn: $watch).toggleStyle(.checkbox)
             
             HStack{
@@ -83,6 +87,7 @@ struct RecordForm: View {
         record.type = type
         record.ipAddress = ipModel.ipAddress
         record.host = host
+        record.proxied = proxied
         record.timestamp = Date()
         
         do{

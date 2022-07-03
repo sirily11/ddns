@@ -23,78 +23,138 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "902578C5-27F4-49C0-A40E-B3AAE98CA647"
+            uuid = "B97415FC-A257-4DA6-9AC5-4E6F2E4CC392"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ddns/Pages/Record/RecordForm.swift"
+            filePath = "ddnsTests/DnsModelTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "save()"
-            landmarkType = "7">
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "DnsModelTest"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B974BC37-3BB6-4D16-AC60-FD8E793A535C"
+            uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ddns/Pages/Record/RecordForm.swift"
+            filePath = "ddnsTests/DnsModelTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "save()"
-            landmarkType = "7">
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "DnsModelTest"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "B974BC37-3BB6-4D16-AC60-FD8E793A535C - e9ec765c80da787c"
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - 5f2e5c814877ed1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for ddns.RecordForm.save() async -&gt; ()"
-                  moduleName = "ddns"
+                  symbolName = "ddnsTests.DnsModelTest.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; ddnsTests.DnsModelTest"
+                  moduleName = "ddnsTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sirily11/Desktop/ddns/ddns/Pages/Record/RecordForm.swift"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "120">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "B974BC37-3BB6-4D16-AC60-FD8E793A535C - fc20b570e902e07a"
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - fefc7b405a77ab1c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for ddns.RecordForm.save() async -&gt; ()"
-                  moduleName = "ddns"
+                  symbolName = "ddnsTests.DnsModelTest.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; ddnsTests.DnsModelTest"
+                  moduleName = "ddnsTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sirily11/Desktop/ddns/ddns/Pages/Record/RecordForm.swift"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "684">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "84">
                </Location>
                <Location
-                  uuid = "B974BC37-3BB6-4D16-AC60-FD8E793A535C - f906959afa615479"
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - f88f9c6a221d5623"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for ddns.RecordForm.save() async -&gt; ()"
-                  moduleName = "ddns"
+                  symbolName = "ddnsTests.DnsModelTest.__allocating_init(selector: ObjectiveC.Selector) -&gt; ddnsTests.DnsModelTest"
+                  moduleName = "ddnsTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sirily11/Desktop/ddns/ddns/Pages/Record/RecordForm.swift"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "768">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - a33d0d0102db5a0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ddnsTests.DnsModelTest.init(selector: ObjectiveC.Selector) -&gt; ddnsTests.DnsModelTest"
+                  moduleName = "ddnsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - cd109ecfe56e5a4c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ddnsTests.DnsModelTest.__allocating_init() -&gt; ddnsTests.DnsModelTest"
+                  moduleName = "ddnsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - e7c21749ad654f22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ddnsTests.DnsModelTest.init() -&gt; ddnsTests.DnsModelTest"
+                  moduleName = "ddnsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "2C7F4BE3-1433-4140-A4F2-5BE5D59895E4 - 994dc7f3fe592d5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ddnsTests.DnsModelTest.__deallocating_deinit"
+                  moduleName = "ddnsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sirily11/Desktop/ddns/ddnsTests/DnsModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>

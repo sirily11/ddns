@@ -19,12 +19,13 @@ struct ContextMenu: View {
     var body: some View {
         VStack {
             Button(action: { Task { await updateRecord(record: record) } }){
-                Text("Update Record")
+                Text("Update Record to \(ipModel.ipAddress)")
             }
             Button(action: { Task { await deleteRecord(record: record) } }){
-                Text("Delete Record")
+                Text("Delete Record from cloudflare")
             }
         }
+        .padding()
     }
     
     private func updateRecord(record: DNSRecord) async {

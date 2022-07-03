@@ -61,6 +61,15 @@ struct RecordDetail: View {
                         }
                 }
                 
+                TableColumn("Proxied"){record in
+                    Text("\(record.proxied.description)")
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                        .contentShape(Rectangle())
+                        .contextMenu{
+                            ContextMenu(record: record)
+                        }
+                }
+                
                 TableColumn("IP Address"){record in
                     if record.isUpdating {
                         Text("Updating...")

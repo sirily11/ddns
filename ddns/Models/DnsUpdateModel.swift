@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 
 class DnsUpdateModel: ObservableObject {
@@ -48,7 +49,7 @@ class DnsUpdateModel: ObservableObject {
                     currentUpdatingHost = host
                 }
                 do {
-                try await updateRecords(records: dnsRecords, ip: ip, cloudflareClient: cloudflareClient)
+                    try await updateRecords(records: dnsRecords, ip: ip, cloudflareClient: cloudflareClient)
                 } catch let err {
                     print(err.localizedDescription)
                 }
@@ -64,6 +65,7 @@ class DnsUpdateModel: ObservableObject {
             if let currentUpdatingHost = currentUpdatingHost {
                 return "Updating \(currentUpdatingHost.domainName ?? "") (\(finishedRecords.count)/\(totalUpdateRecords.count) )"
             }
+            return "Updating \(title)"
         }
         return title
     }
@@ -94,4 +96,24 @@ class DnsUpdateModel: ObservableObject {
         return changedResults
     }
     
+    @MainActor
+    func updateDnsRecords(context: NSManagedObjectContext, cloudflare: CloudflareClient, host: Host) async throws{
+        isUpdating = true
+        do {
+            let result = try await cloudflare.use(host: host).listDNSRecords()
+            let dnsRecords = result.result.map { result in
+                result.toDnsRecord(context: context)
+            }
+            host.records = NSSet(array: dnsRecords)
+            try context.save()
+            
+            if self.host == host {
+                self.records = dnsRecords
+            }
+            
+        } catch let error {
+            throw error
+        }
+        isUpdating = false
+    }
 }

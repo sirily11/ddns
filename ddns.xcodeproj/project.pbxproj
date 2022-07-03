@@ -14,13 +14,15 @@
 		CD0F42EF28708C0400250CB7 /* HostListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42EE28708C0400250CB7 /* HostListItem.swift */; };
 		CD0F42F12870B2AE00250CB7 /* DnsUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */; };
 		CD0F42F52871971A00250CB7 /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F42871971A00250CB7 /* ContextMenu.swift */; };
+		CD0F42F72871DCB400250CB7 /* DnsModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F62871DCB400250CB7 /* DnsModelTest.swift */; };
+		CD0F42F92871F79800250CB7 /* CloudflareDNSResult+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F82871F79800250CB7 /* CloudflareDNSResult+Extension.swift */; };
 		CD1381CB284F1CA500A24CF1 /* ddnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */; };
 		CD1381CD284F1CA500A24CF1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CC284F1CA500A24CF1 /* HomeView.swift */; };
 		CD1381CF284F1CA600A24CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1381CE284F1CA600A24CF1 /* Assets.xcassets */; };
 		CD1381D2284F1CA600A24CF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1381D1284F1CA600A24CF1 /* Preview Assets.xcassets */; };
 		CD1381D4284F1CA600A24CF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381D3284F1CA600A24CF1 /* Persistence.swift */; };
 		CD1381D7284F1CA600A24CF1 /* ddns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD1381D5284F1CA600A24CF1 /* ddns.xcdatamodeld */; };
-		CD1381E2284F1CA600A24CF1 /* DnsUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381E1284F1CA600A24CF1 /* DnsUpdateModel.swift */; };
+		CD1381E2284F1CA600A24CF1 /* DnsUpdateModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381E1284F1CA600A24CF1 /* DnsUpdateModelTest.swift */; };
 		CD1381EC284F1CA600A24CF1 /* ddnsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */; };
 		CD1381EE284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */; };
 		CD138200284F43E000A24CF1 /* HostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381FF284F43E000A24CF1 /* HostList.swift */; };
@@ -60,6 +62,8 @@
 		CD0F42EE28708C0400250CB7 /* HostListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListItem.swift; sourceTree = "<group>"; };
 		CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsUpdateModel.swift; sourceTree = "<group>"; };
 		CD0F42F42871971A00250CB7 /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
+		CD0F42F62871DCB400250CB7 /* DnsModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsModelTest.swift; sourceTree = "<group>"; };
+		CD0F42F82871F79800250CB7 /* CloudflareDNSResult+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudflareDNSResult+Extension.swift"; sourceTree = "<group>"; };
 		CD1381C7284F1CA500A24CF1 /* ddns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsApp.swift; sourceTree = "<group>"; };
 		CD1381CC284F1CA500A24CF1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -69,7 +73,7 @@
 		CD1381D6284F1CA600A24CF1 /* ddns.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ddns.xcdatamodel; sourceTree = "<group>"; };
 		CD1381D8284F1CA600A24CF1 /* ddns.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ddns.entitlements; sourceTree = "<group>"; };
 		CD1381DD284F1CA600A24CF1 /* ddnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ddnsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1381E1284F1CA600A24CF1 /* DnsUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsUpdateModel.swift; sourceTree = "<group>"; };
+		CD1381E1284F1CA600A24CF1 /* DnsUpdateModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsUpdateModelTest.swift; sourceTree = "<group>"; };
 		CD1381E7284F1CA600A24CF1 /* ddnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ddnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsUITests.swift; sourceTree = "<group>"; };
 		CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0F42E72870781100250CB7 /* DNSRecord+Extension.swift */,
+				CD0F42F82871F79800250CB7 /* CloudflareDNSResult+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,7 +181,8 @@
 		CD1381E0284F1CA600A24CF1 /* ddnsTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD1381E1284F1CA600A24CF1 /* DnsUpdateModel.swift */,
+				CD1381E1284F1CA600A24CF1 /* DnsUpdateModelTest.swift */,
+				CD0F42F62871DCB400250CB7 /* DnsModelTest.swift */,
 			);
 			path = ddnsTests;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				CD138217284FB1FC00A24CF1 /* DnsRecord.swift in Sources */,
 				CD13820A284F54B500A24CF1 /* IPAddressModel.swift in Sources */,
 				CD0F42DF287045BA00250CB7 /* CloudflareClinet.swift in Sources */,
+				CD0F42F92871F79800250CB7 /* CloudflareDNSResult+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +419,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1381E2284F1CA600A24CF1 /* DnsUpdateModel.swift in Sources */,
+				CD1381E2284F1CA600A24CF1 /* DnsUpdateModelTest.swift in Sources */,
+				CD0F42F72871DCB400250CB7 /* DnsModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ddns/ddns.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -568,12 +577,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -587,6 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ddns/ddns.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -595,12 +606,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sirilee.ddns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -8,20 +8,6 @@
 import XCTest
 @testable import ddns
 
-class TestCoreDataStack: NSObject {
-    lazy var persistentContainer: NSPersistentContainer = {
-        let description = NSPersistentStoreDescription()
-        description.url = URL(fileURLWithPath: "/dev/null")
-        let container = NSPersistentContainer(name: "your_model_name")
-        container.persistentStoreDescriptions = [description]
-        container.loadPersistentStores { _, error in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-        return container
-    }()
-}
 
 class DnsUpdateModelTest: XCTestCase {
     var records: [DNSRecord] = []
@@ -29,7 +15,7 @@ class DnsUpdateModelTest: XCTestCase {
     let ipAddress2 = "192.168.1.2"
     let ipAddress3 = "192.168.1.3"
     
-    let context = TestCoreDataStack().persistentContainer.newBackgroundContext()
+    let context = PersistenceController.init(inMemory: true).container.viewContext
     
     override func setUpWithError() throws {
        let record1 = DNSRecord(context: context)
