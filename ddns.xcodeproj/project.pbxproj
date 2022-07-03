@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0F42DF287045BA00250CB7 /* CloudflareClinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42DE287045BA00250CB7 /* CloudflareClinet.swift */; };
+		CD0F42E128704E9200250CB7 /* CloudflareResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42E028704E9200250CB7 /* CloudflareResult.swift */; };
+		CD0F42E4287050A300250CB7 /* CloudflareClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42E3287050A300250CB7 /* CloudflareClientError.swift */; };
+		CD0F42E82870781100250CB7 /* DNSRecord+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42E72870781100250CB7 /* DNSRecord+Extension.swift */; };
+		CD0F42EF28708C0400250CB7 /* HostListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42EE28708C0400250CB7 /* HostListItem.swift */; };
+		CD0F42F12870B2AE00250CB7 /* DnsUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */; };
+		CD0F42F52871971A00250CB7 /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F42871971A00250CB7 /* ContextMenu.swift */; };
 		CD1381CB284F1CA500A24CF1 /* ddnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */; };
-		CD1381CD284F1CA500A24CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CC284F1CA500A24CF1 /* ContentView.swift */; };
+		CD1381CD284F1CA500A24CF1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CC284F1CA500A24CF1 /* HomeView.swift */; };
 		CD1381CF284F1CA600A24CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1381CE284F1CA600A24CF1 /* Assets.xcassets */; };
 		CD1381D2284F1CA600A24CF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1381D1284F1CA600A24CF1 /* Preview Assets.xcassets */; };
 		CD1381D4284F1CA600A24CF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381D3284F1CA600A24CF1 /* Persistence.swift */; };
 		CD1381D7284F1CA600A24CF1 /* ddns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD1381D5284F1CA600A24CF1 /* ddns.xcdatamodeld */; };
-		CD1381E2284F1CA600A24CF1 /* ddnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381E1284F1CA600A24CF1 /* ddnsTests.swift */; };
+		CD1381E2284F1CA600A24CF1 /* DnsUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381E1284F1CA600A24CF1 /* DnsUpdateModel.swift */; };
 		CD1381EC284F1CA600A24CF1 /* ddnsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */; };
 		CD1381EE284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */; };
+		CD138200284F43E000A24CF1 /* HostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381FF284F43E000A24CF1 /* HostList.swift */; };
+		CD138203284F450E00A24CF1 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = CD138202284F450E00A24CF1 /* SFSafeSymbols */; };
+		CD138205284F468D00A24CF1 /* HostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD138204284F468D00A24CF1 /* HostForm.swift */; };
+		CD138207284F525900A24CF1 /* RecordDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD138206284F525900A24CF1 /* RecordDetail.swift */; };
+		CD13820A284F54B500A24CF1 /* IPAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD138209284F54B500A24CF1 /* IPAddressModel.swift */; };
+		CD13820D284F663800A24CF1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD13820C284F663800A24CF1 /* Alamofire */; };
+		CD138210284F66FE00A24CF1 /* IpAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13820F284F66FE00A24CF1 /* IpAddress.swift */; };
+		CD138213284F785200A24CF1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD138212284F785200A24CF1 /* CardView.swift */; };
+		CD138215284F897D00A24CF1 /* RecordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD138214284F897D00A24CF1 /* RecordForm.swift */; };
+		CD138217284FB1FC00A24CF1 /* DnsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD138216284FB1FC00A24CF1 /* DnsRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +53,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0F42DE287045BA00250CB7 /* CloudflareClinet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareClinet.swift; sourceTree = "<group>"; };
+		CD0F42E028704E9200250CB7 /* CloudflareResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareResult.swift; sourceTree = "<group>"; };
+		CD0F42E3287050A300250CB7 /* CloudflareClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudflareClientError.swift; sourceTree = "<group>"; };
+		CD0F42E72870781100250CB7 /* DNSRecord+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DNSRecord+Extension.swift"; sourceTree = "<group>"; };
+		CD0F42EE28708C0400250CB7 /* HostListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListItem.swift; sourceTree = "<group>"; };
+		CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsUpdateModel.swift; sourceTree = "<group>"; };
+		CD0F42F42871971A00250CB7 /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
 		CD1381C7284F1CA500A24CF1 /* ddns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsApp.swift; sourceTree = "<group>"; };
-		CD1381CC284F1CA500A24CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD1381CC284F1CA500A24CF1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD1381CE284F1CA600A24CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1381D1284F1CA600A24CF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD1381D3284F1CA600A24CF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CD1381D6284F1CA600A24CF1 /* ddns.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ddns.xcdatamodel; sourceTree = "<group>"; };
 		CD1381D8284F1CA600A24CF1 /* ddns.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ddns.entitlements; sourceTree = "<group>"; };
 		CD1381DD284F1CA600A24CF1 /* ddnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ddnsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1381E1284F1CA600A24CF1 /* ddnsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsTests.swift; sourceTree = "<group>"; };
+		CD1381E1284F1CA600A24CF1 /* DnsUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsUpdateModel.swift; sourceTree = "<group>"; };
 		CD1381E7284F1CA600A24CF1 /* ddnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ddnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1381EB284F1CA600A24CF1 /* ddnsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsUITests.swift; sourceTree = "<group>"; };
 		CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddnsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD1381FF284F43E000A24CF1 /* HostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostList.swift; sourceTree = "<group>"; };
+		CD138204284F468D00A24CF1 /* HostForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostForm.swift; sourceTree = "<group>"; };
+		CD138206284F525900A24CF1 /* RecordDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetail.swift; sourceTree = "<group>"; };
+		CD138209284F54B500A24CF1 /* IPAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressModel.swift; sourceTree = "<group>"; };
+		CD13820F284F66FE00A24CF1 /* IpAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpAddress.swift; sourceTree = "<group>"; };
+		CD138212284F785200A24CF1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CD138214284F897D00A24CF1 /* RecordForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordForm.swift; sourceTree = "<group>"; };
+		CD138216284FB1FC00A24CF1 /* DnsRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD138203284F450E00A24CF1 /* SFSafeSymbols in Frameworks */,
+				CD13820D284F663800A24CF1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0F42E22870509200250CB7 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F42E3287050A300250CB7 /* CloudflareClientError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		CD0F42E5287077F900250CB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F42E72870781100250CB7 /* DNSRecord+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CD1381BE284F1CA500A24CF1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +149,13 @@
 		CD1381C9284F1CA500A24CF1 /* ddns */ = {
 			isa = PBXGroup;
 			children = (
+				CD0F42E5287077F900250CB7 /* Extensions */,
+				CD0F42E22870509200250CB7 /* Errors */,
+				CD138211284F784800A24CF1 /* Shared */,
+				CD13820E284F66B500A24CF1 /* Types */,
+				CD138208284F54A300A24CF1 /* Models */,
+				CD1381FA284F438300A24CF1 /* Pages */,
 				CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */,
-				CD1381CC284F1CA500A24CF1 /* ContentView.swift */,
 				CD1381CE284F1CA600A24CF1 /* Assets.xcassets */,
 				CD1381D3284F1CA600A24CF1 /* Persistence.swift */,
 				CD1381D8284F1CA600A24CF1 /* ddns.entitlements */,
@@ -121,7 +176,7 @@
 		CD1381E0284F1CA600A24CF1 /* ddnsTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD1381E1284F1CA600A24CF1 /* ddnsTests.swift */,
+				CD1381E1284F1CA600A24CF1 /* DnsUpdateModel.swift */,
 			);
 			path = ddnsTests;
 			sourceTree = "<group>";
@@ -133,6 +188,64 @@
 				CD1381ED284F1CA600A24CF1 /* ddnsUITestsLaunchTests.swift */,
 			);
 			path = ddnsUITests;
+			sourceTree = "<group>";
+		};
+		CD1381FA284F438300A24CF1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381FC284F43C300A24CF1 /* Host */,
+				CD1381FB284F438B00A24CF1 /* Record */,
+				CD1381CC284F1CA500A24CF1 /* HomeView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		CD1381FB284F438B00A24CF1 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				CD138206284F525900A24CF1 /* RecordDetail.swift */,
+				CD138214284F897D00A24CF1 /* RecordForm.swift */,
+				CD0F42F42871971A00250CB7 /* ContextMenu.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		CD1381FC284F43C300A24CF1 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				CD1381FF284F43E000A24CF1 /* HostList.swift */,
+				CD138204284F468D00A24CF1 /* HostForm.swift */,
+				CD0F42EE28708C0400250CB7 /* HostListItem.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		CD138208284F54A300A24CF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD138209284F54B500A24CF1 /* IPAddressModel.swift */,
+				CD0F42DE287045BA00250CB7 /* CloudflareClinet.swift */,
+				CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD13820E284F66B500A24CF1 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CD13820F284F66FE00A24CF1 /* IpAddress.swift */,
+				CD138216284FB1FC00A24CF1 /* DnsRecord.swift */,
+				CD0F42E028704E9200250CB7 /* CloudflareResult.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		CD138211284F784800A24CF1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD138212284F785200A24CF1 /* CardView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +264,10 @@
 			dependencies = (
 			);
 			name = ddns;
+			packageProductDependencies = (
+				CD138202284F450E00A24CF1 /* SFSafeSymbols */,
+				CD13820C284F663800A24CF1 /* Alamofire */,
+			);
 			productName = ddns;
 			productReference = CD1381C7284F1CA500A24CF1 /* ddns.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +340,10 @@
 				Base,
 			);
 			mainGroup = CD1381BE284F1CA500A24CF1;
+			packageReferences = (
+				CD138201284F450E00A24CF1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				CD13820B284F663800A24CF1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CD1381C8284F1CA500A24CF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,10 +386,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0F42E82870781100250CB7 /* DNSRecord+Extension.swift in Sources */,
 				CD1381D4284F1CA600A24CF1 /* Persistence.swift in Sources */,
-				CD1381CD284F1CA500A24CF1 /* ContentView.swift in Sources */,
+				CD1381CD284F1CA500A24CF1 /* HomeView.swift in Sources */,
 				CD1381D7284F1CA600A24CF1 /* ddns.xcdatamodeld in Sources */,
+				CD0F42F12870B2AE00250CB7 /* DnsUpdateModel.swift in Sources */,
+				CD0F42EF28708C0400250CB7 /* HostListItem.swift in Sources */,
+				CD138205284F468D00A24CF1 /* HostForm.swift in Sources */,
+				CD138213284F785200A24CF1 /* CardView.swift in Sources */,
+				CD0F42F52871971A00250CB7 /* ContextMenu.swift in Sources */,
+				CD138210284F66FE00A24CF1 /* IpAddress.swift in Sources */,
+				CD138207284F525900A24CF1 /* RecordDetail.swift in Sources */,
+				CD138215284F897D00A24CF1 /* RecordForm.swift in Sources */,
 				CD1381CB284F1CA500A24CF1 /* ddnsApp.swift in Sources */,
+				CD0F42E128704E9200250CB7 /* CloudflareResult.swift in Sources */,
+				CD138200284F43E000A24CF1 /* HostList.swift in Sources */,
+				CD0F42E4287050A300250CB7 /* CloudflareClientError.swift in Sources */,
+				CD138217284FB1FC00A24CF1 /* DnsRecord.swift in Sources */,
+				CD13820A284F54B500A24CF1 /* IPAddressModel.swift in Sources */,
+				CD0F42DF287045BA00250CB7 /* CloudflareClinet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1381E2284F1CA600A24CF1 /* ddnsTests.swift in Sources */,
+				CD1381E2284F1CA600A24CF1 /* DnsUpdateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +720,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD138201284F450E00A24CF1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		CD13820B284F663800A24CF1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD138202284F450E00A24CF1 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD138201284F450E00A24CF1 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		CD13820C284F663800A24CF1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD13820B284F663800A24CF1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CD1381D5284F1CA600A24CF1 /* ddns.xcdatamodeld */ = {

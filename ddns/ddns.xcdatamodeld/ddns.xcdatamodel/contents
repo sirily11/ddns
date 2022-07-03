@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DNSRecord" representedClassName="DNSRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="cloudflareId" optional="YES" attributeType="String"/>
+        <attribute name="ipAddress" attributeType="String"/>
+        <attribute name="isUpdating" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="watch" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="host" maxCount="1" deletionRule="Nullify" destinationEntity="Host" inverseName="records" inverseEntity="Host"/>
+    </entity>
+    <entity name="Host" representedClassName="Host" syncable="YES" codeGenerationType="class">
+        <attribute name="apiKey" attributeType="String"/>
+        <attribute name="domainName" optional="YES" attributeType="String"/>
+        <attribute name="zoneId" attributeType="String"/>
+        <relationship name="records" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DNSRecord" inverseName="host" inverseEntity="DNSRecord"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="DNSRecord" positionX="-41.36328125" positionY="-330.40234375" width="128" height="149"/>
+        <element name="Host" positionX="433.66015625" positionY="-840.89453125" width="128" height="89"/>
     </elements>
 </model>
