@@ -9,7 +9,7 @@
         <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="type" attributeType="String"/>
         <attribute name="watch" attributeType="Boolean" usesScalarValueType="YES"/>
-        <relationship name="host" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Host" inverseName="records" inverseEntity="Host"/>
+        <relationship name="host" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Host" inverseName="records" inverseEntity="Host"/>
     </entity>
     <entity name="Host" representedClassName="Host" syncable="YES" codeGenerationType="class">
         <attribute name="apiKey" attributeType="String"/>

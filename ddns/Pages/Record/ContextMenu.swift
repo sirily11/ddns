@@ -45,8 +45,8 @@ struct ContextMenu: View {
         do {
             let _ = try await cloudflareClient.deleteDNSRecord(dns: record)
             viewContext.delete(record)
+            try viewContext.save()
             dnsUpdateModel.remove(record: record)
-
         } catch let error {
             print("\(error.localizedDescription)")
         }

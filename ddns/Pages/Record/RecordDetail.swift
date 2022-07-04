@@ -28,7 +28,7 @@ struct RecordDetail: View {
         VStack(alignment: .leading){
             HStack{
                 CardView{
-                    Text("API Key: \(host.apiKey!)")
+                    Text("API Key: \(host.apiKey ?? "")")
                         .frame(height: 100)
                 }
                 CardView{
