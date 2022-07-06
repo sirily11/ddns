@@ -96,8 +96,11 @@ class DnsUpdateModel: ObservableObject {
         return changedResults
     }
     
+    /**
+     Fetch remote dns records and replace the current one
+     */
     @MainActor
-    func updateDnsRecords(context: NSManagedObjectContext, cloudflare: CloudflareClient, host: Host) async throws{
+    func updateUpstreamDnsRecords(context: NSManagedObjectContext, host: Host) async throws{
         isUpdating = true
         do {
             let result = try await cloudflare.use(host: host).listDNSRecords()
