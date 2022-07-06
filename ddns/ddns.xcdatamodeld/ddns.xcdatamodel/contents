@@ -3,9 +3,9 @@
     <entity name="DNSRecord" representedClassName="DNSRecord" syncable="YES" codeGenerationType="class">
         <attribute name="cloudflareId" optional="YES" attributeType="String"/>
         <attribute name="ipAddress" attributeType="String"/>
-        <attribute name="isUpdating" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="proxied" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
         <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="type" attributeType="String"/>
         <attribute name="watch" attributeType="Boolean" usesScalarValueType="YES"/>

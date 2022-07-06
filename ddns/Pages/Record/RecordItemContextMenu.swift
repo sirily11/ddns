@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContextMenu: View {
+struct RecordItemContextMenu: View {
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject private var cloudflareClient: CloudflareClient
     @EnvironmentObject private var ipModel: IPAddressModel
@@ -29,26 +29,10 @@ struct ContextMenu: View {
     }
     
     private func updateRecord(record: DNSRecord) async {
-        do {
-            record.isUpdating = true
-            dnsUpdateModel.update(record: record)
-            record.ipAddress = ipModel.ipAddress
-            let _ = try await cloudflareClient.use(host: dnsUpdateModel.host!).updateDNSRecord(dns: record)
-            record.isUpdating = false
-            dnsUpdateModel.update(record: record)
-        } catch let error {
-            print("\(error.localizedDescription)")
-        }
+        await dnsUpdateModel.updateDnsRecord(context: viewContext, record: record, ip: ipModel.ipAddress)
     }
     
     private func deleteRecord(record: DNSRecord) async {
-        do {
-            let _ = try await cloudflareClient.deleteDNSRecord(dns: record)
-            viewContext.delete(record)
-            try viewContext.save()
-            dnsUpdateModel.remove(record: record)
-        } catch let error {
-            print("\(error.localizedDescription)")
-        }
+        await dnsUpdateModel.deleteDnsRecord(context: viewContext, record: record)
     }
 }

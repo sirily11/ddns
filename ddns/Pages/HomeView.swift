@@ -14,7 +14,7 @@ struct ContentView: View {
     @EnvironmentObject var dnsUpdateModel: DnsUpdateModel
     @EnvironmentObject var cloudflareClient: CloudflareClient
     
-    let ipTimer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
+    let ipTimer = Timer.publish(every: 1800, on: .main, in: .common).autoconnect()
 
     @FetchRequest(
         sortDescriptors: [],
@@ -27,8 +27,7 @@ struct ContentView: View {
         }
         .onReceive(ipTimer){ time in
             Task{
-                // auto fetching latest remote ip address
-                print("Fetching...")
+                await updateRecords()
             }
         }
         .navigationTitle(dnsUpdateModel.getTitle(title: "Home"))
@@ -39,10 +38,11 @@ struct ContentView: View {
     
     func updateRecords() async {
         do {
+            print("Updating...")
             await model.update()
             let fetchRequest = NSFetchRequest<Host>(entityName: "Host")
             let foundHosts = try viewContext.fetch(fetchRequest)
-            try await dnsUpdateModel.update(hosts: foundHosts, ip: model.ipAddress, cloudflareClient: cloudflareClient)
+            try await dnsUpdateModel.update(hosts: foundHosts, ip: model.ipAddress)
             
         } catch let error {
             print("\(error.localizedDescription)")

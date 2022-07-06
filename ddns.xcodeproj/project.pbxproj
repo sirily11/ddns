@@ -13,7 +13,7 @@
 		CD0F42E82870781100250CB7 /* DNSRecord+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42E72870781100250CB7 /* DNSRecord+Extension.swift */; };
 		CD0F42EF28708C0400250CB7 /* HostListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42EE28708C0400250CB7 /* HostListItem.swift */; };
 		CD0F42F12870B2AE00250CB7 /* DnsUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */; };
-		CD0F42F52871971A00250CB7 /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F42871971A00250CB7 /* ContextMenu.swift */; };
+		CD0F42F52871971A00250CB7 /* RecordItemContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F42871971A00250CB7 /* RecordItemContextMenu.swift */; };
 		CD0F42F72871DCB400250CB7 /* DnsModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F62871DCB400250CB7 /* DnsModelTest.swift */; };
 		CD0F42F92871F79800250CB7 /* CloudflareDNSResult+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F42F82871F79800250CB7 /* CloudflareDNSResult+Extension.swift */; };
 		CD1381CB284F1CA500A24CF1 /* ddnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1381CA284F1CA500A24CF1 /* ddnsApp.swift */; };
@@ -61,7 +61,7 @@
 		CD0F42E72870781100250CB7 /* DNSRecord+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DNSRecord+Extension.swift"; sourceTree = "<group>"; };
 		CD0F42EE28708C0400250CB7 /* HostListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListItem.swift; sourceTree = "<group>"; };
 		CD0F42F02870B2AE00250CB7 /* DnsUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsUpdateModel.swift; sourceTree = "<group>"; };
-		CD0F42F42871971A00250CB7 /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
+		CD0F42F42871971A00250CB7 /* RecordItemContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordItemContextMenu.swift; sourceTree = "<group>"; };
 		CD0F42F62871DCB400250CB7 /* DnsModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsModelTest.swift; sourceTree = "<group>"; };
 		CD0F42F82871F79800250CB7 /* CloudflareDNSResult+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudflareDNSResult+Extension.swift"; sourceTree = "<group>"; };
 		CD1381C7284F1CA500A24CF1 /* ddns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddns.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,7 +211,7 @@
 			children = (
 				CD138206284F525900A24CF1 /* RecordDetail.swift */,
 				CD138214284F897D00A24CF1 /* RecordForm.swift */,
-				CD0F42F42871971A00250CB7 /* ContextMenu.swift */,
+				CD0F42F42871971A00250CB7 /* RecordItemContextMenu.swift */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -400,7 +400,7 @@
 				CD0F42EF28708C0400250CB7 /* HostListItem.swift in Sources */,
 				CD138205284F468D00A24CF1 /* HostForm.swift in Sources */,
 				CD138213284F785200A24CF1 /* CardView.swift in Sources */,
-				CD0F42F52871971A00250CB7 /* ContextMenu.swift in Sources */,
+				CD0F42F52871971A00250CB7 /* RecordItemContextMenu.swift in Sources */,
 				CD138210284F66FE00A24CF1 /* IpAddress.swift in Sources */,
 				CD138207284F525900A24CF1 /* RecordDetail.swift in Sources */,
 				CD138215284F897D00A24CF1 /* RecordForm.swift in Sources */,
