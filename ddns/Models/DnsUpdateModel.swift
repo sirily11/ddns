@@ -18,12 +18,20 @@ class DnsUpdateModel: ObservableObject {
     @Published var records: [DNSRecord] = []
     @Published var host: Host?
     
+    private var cloudflare: CloudflareClient = CloudflareClient()
+    
+    /**
+     Update one record
+     */
     func update(record: DNSRecord) {
         if let index = records.firstIndex(of: record) {
             records[index] = record
         }
     }
     
+    /**
+     Remove one record
+     */
     func remove(record: DNSRecord) {
         if let index = records.firstIndex(of: record) {
             records.remove(at: index)
@@ -31,8 +39,11 @@ class DnsUpdateModel: ObservableObject {
     }
     
     
+    /**
+     Update all records in all hosts
+     */
     @MainActor
-    func update(hosts: [Host], ip: String, cloudflareClient: CloudflareClient) async throws{
+    func update(hosts: [Host], ip: String) async throws{
         isUpdating = true
         totalUpdateRecords = []
         finishedRecords = []
@@ -49,7 +60,7 @@ class DnsUpdateModel: ObservableObject {
                     currentUpdatingHost = host
                 }
                 do {
-                    try await updateRecords(records: dnsRecords, ip: ip, cloudflareClient: cloudflareClient)
+                    try await updateRecords(host: host, records: dnsRecords, ip: ip)
                 } catch let err {
                     print(err.localizedDescription)
                 }
@@ -60,6 +71,9 @@ class DnsUpdateModel: ObservableObject {
         isUpdating = false
     }
     
+    /**
+     Get navigation title
+     */
     func getTitle(title: String) -> String{
         if isUpdating {
             if let currentUpdatingHost = currentUpdatingHost {
@@ -70,12 +84,12 @@ class DnsUpdateModel: ObservableObject {
         return title
     }
     
-    
-    private func updateRecords(records: [DNSRecord], ip: String, cloudflareClient: CloudflareClient) async throws {
+    @MainActor
+    private func updateRecords(host: Host, records: [DNSRecord], ip: String) async throws {
         for record in records {
             record.ipAddress = ip
             do {
-                let _ = try await cloudflareClient.updateDNSRecord(dns: record)
+                let _ = try await cloudflare.use(host: host).updateDNSRecord(dns: record)
             } catch let error {
                 print(error.localizedDescription)
             }
@@ -84,6 +98,9 @@ class DnsUpdateModel: ObservableObject {
         
     }
     
+    /**
+     Given a list of records, returns a list of records need to be updated
+     */
     func findRecordsToUpdate(dns: [DNSRecord], ip: String ) -> [DNSRecord]{
         let watchedRecords = dns.filter { record in
             record.watch
@@ -118,5 +135,42 @@ class DnsUpdateModel: ObservableObject {
             throw error
         }
         isUpdating = false
+    }
+    
+    
+    /**
+     Update one record
+     */
+    @MainActor
+    func updateDnsRecord(context: NSManagedObjectContext, record: DNSRecord, ip: String) async {
+        do {
+            record.setStatus(.updating)
+            update(record: record)
+            record.ipAddress = ip
+            let _ = try await cloudflare.use(host: host!).updateDNSRecord(dns: record)
+            record.setStatus(nil)
+            update(record: record)
+            try context.save()
+        } catch let error {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
+    /**
+     Delete one record
+     */
+    @MainActor
+    func deleteDnsRecord(context: NSManagedObjectContext, record: DNSRecord) async {
+        do {
+            record.setStatus(.deleting)
+            update(record: record)
+            let _ = try await cloudflare.use(host: host!).deleteDNSRecord(dns: record)
+            context.delete(record)
+            record.setStatus(nil)
+            try! context.save()
+            remove(record: record)
+        } catch let error {
+            print("\(error.localizedDescription)")
+        }
     }
 }

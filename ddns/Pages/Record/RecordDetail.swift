@@ -22,6 +22,9 @@ struct RecordDetail: View {
     
     @State var showAddRecord = false
     @State var selectedRecord = Set<DNSRecord.ID>()
+    @State var sortOrder: [KeyPathComparator<DNSRecord>] = [
+        .init(\.name, order: SortOrder.forward)
+        ]
     
     
     var body: some View {
@@ -42,13 +45,13 @@ struct RecordDetail: View {
             }
             Spacer()
             
-            Table(dnsUpdateModel.records, selection: $selectedRecord){
+            Table(dnsUpdateModel.records, selection: $selectedRecord, sortOrder: $sortOrder){
                 TableColumn("Type"){record in
                     Text(record.type!)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                         .contentShape(Rectangle())
                         .contextMenu{
-                            ContextMenu(record: record)
+                            RecordItemContextMenu(record: record)
                         }
                     
                 }
@@ -57,7 +60,7 @@ struct RecordDetail: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                         .contentShape(Rectangle())
                         .contextMenu{
-                            ContextMenu(record: record)
+                            RecordItemContextMenu(record: record)
                         }
                 }
                 
@@ -66,23 +69,31 @@ struct RecordDetail: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                         .contentShape(Rectangle())
                         .contextMenu{
-                            ContextMenu(record: record)
+                            RecordItemContextMenu(record: record)
                         }
                 }
                 
                 TableColumn("IP Address"){record in
-                    if record.isUpdating {
-                        Text("Updating...")
-                        
+                    if let status = record.status {
+                        Text(status)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     } else {
                         Text(record.ipAddress!)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                             .contentShape(Rectangle())
                             .contextMenu{
-                                ContextMenu(record: record)
+                                RecordItemContextMenu(record: record)
                             }
                     }
                 }
+            }
+            .contextMenu{
+                VStack{
+                    Button(action: { showAddRecord = true }){
+                        Text("Add a dns record")
+                    }
+                }
+                
             }
         }
         .padding(.all)
