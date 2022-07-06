@@ -68,7 +68,7 @@ struct HostListItem: View {
     func refresh() async {
         do {
             await updateDomainName()
-            try await dnsUpdateModel.updateDnsRecords(context: viewContext, cloudflare: cloudflareClient, host: host)
+            try await dnsUpdateModel.updateUpstreamDnsRecords(context: viewContext, host: host)
         } catch let error {
             self.error = error
         }
